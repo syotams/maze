@@ -1,0 +1,8 @@
+<div class="tile"
+     ng-style="{'background-color': true == $ctrl.value ? $ctrl.parent.colors.colorB :
+                ('p' == $ctrl.value ? $ctrl.parent.colors.colorC : $ctrl.parent.colors.colorA)}"
+     ng-click="$ctrl.onClick()">
+    <span ng-show="$ctrl.parent.points.start==$ctrl.index || $ctrl.parent.points.end==$ctrl.index">
+        {{$ctrl.tileTitle}}
+    </span>
+</div>

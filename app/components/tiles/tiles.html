@@ -1,0 +1,28 @@
+<div class="side-bar" ng-include="'views/sidebar.html'"></div>
+
+<div class="tiles center">
+    <tile ng-repeat="(key, value) in tilesCtrl.tiles track by key"
+          ng-style="{'width': 'calc(100% / ' + tilesCtrl.columns
+                    + ')', 'height': 'calc(100% / ' + tilesCtrl.columns + ')'}"
+          index="key"
+          value="value">
+    </tile>
+</div>
+
+<div class="v-center">
+    <div class="m-10">
+        <label ng-style="{'color': tilesCtrl.colors.colorA}">ColorA:</label>
+        <input type="text" ng-model="tilesCtrl.colors.colorA" name="colorA"
+                       ng-style="{'border-color': tilesCtrl.colors.colorA}" />
+    </div>
+    <div class="m-10">
+        <label ng-style="{'color': tilesCtrl.colors.colorB}">ColorB:</label>
+        <input type="text" ng-model="tilesCtrl.colors.colorB" name="colorB"
+                       ng-style="{'border-color': tilesCtrl.colors.colorB}"/>
+    </div>
+    <div class="m-10">
+        <label ng-style="{'color': tilesCtrl.colors.colorC}">ColorC:</label>
+        <input type="text" ng-model="tilesCtrl.colors.colorC" name="colorC"
+                       ng-style="{'border-color': tilesCtrl.colors.colorC}"/>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+/* app css stylesheet */
+html, body {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0 0 0.5em;
+}
+
+.side-bar {
+  padding: 15px;
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin: calc(50vh - 16.5vh) auto 0 auto;
+  position: relative;
+  height: 33vh;
+  width: 33vh;
+}
+
+.tiles {
+  box-shadow: 0 0 15px 0 #ededed;
+}
+
+input[type=text] {
+  border-width: 1px;
+  padding: 4px 6px;
+}
+
+tile {
+  float: left;
+  position: relative;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+}
+.v-center {
+  margin: 20px auto;
+  width: 300px
+}
+.m-10 {
+  padding: 10px 0;
+}
+.colorA {
+  background-color: #ededed;
+}
+.colorB {
+  background-color: rebeccapurple;
+}
+.colorC {
+  background-color: yellowgreen;
+}
+.btn {
+  display: inline-block;
+  width: 150px;
+  padding: 5px 0;
+  border-left: solid 3px green;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #ededed;
+  color: white
+}
+.btn-menu {
+  color: black
+}
+.btn-menu:hover {
+  background-color: #222222;
+  color: white;
+}
+.btn-result:before {
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  content: '\2714';
+}
+.bgClicked {
+  background-color: #222222;
+  color: white;
+}
+.tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.5em;
+  color: white;
+}

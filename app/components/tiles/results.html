@@ -1,0 +1,8 @@
+<div class="text-center center">
+    Job ended successfully with {{$ctrl.steps}} steps, at
+    {{$ctrl.elapsedTime | amDateFormat: '00:mm:ss' }}
+    Total visited: {{$ctrl.totalVisited}}
+    <p>
+        <a class="btn btn-menu btn-result" ng-href="#!/tiles">Start Over</a>
+    </p>
+</div>

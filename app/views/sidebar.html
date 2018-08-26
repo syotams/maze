@@ -1,0 +1,30 @@
+<div>
+    <ul>
+        <li>
+            <a class="btn btn-menu"
+               ng-class="{bgClicked: tilesCtrl.state==='Start'}"
+               ng-click="tilesCtrl.toggleStartState()">Start</a>
+        </li>
+        <li>
+            <a class="btn btn-menu"
+               ng-class="{bgClicked: tilesCtrl.state==='End'}"
+               ng-click="tilesCtrl.toggleEndState()">End</a>
+        </li>
+        <li>
+            <a class="btn btn-menu"
+               ng-click="tilesCtrl.findPath()">Go</a>
+        </li>
+        <li>
+            <a class="btn btn-menu"
+               ng-click="tilesCtrl.clearPath()">Reset Path</a>
+        </li>
+        <li>
+            <a class="btn btn-menu"
+               ng-click="tilesCtrl.reset()">Reset Tiles</a>
+        </li>
+        <li>
+            <a class="btn btn-menu"
+               ng-click="tilesCtrl.saveTiles()">Save Tiles</a>
+        </li>
+    </ul>
+</div>
