@@ -12,6 +12,9 @@ npm install
 ## Run
 npm start
 
+## Create a maze and let the solver run 
+[![Maze solver](https://github.com/syotams/maze/blob/master/resources/maze.png)](https://github.com/syotams/maze/blob/master/resources/maze-4.mov)
+
 ## TODO
 - [ ] Save maze
 - [ ] Load maze from file
